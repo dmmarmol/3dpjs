@@ -9,15 +9,19 @@
         "url": "http://diegomarmol.com"
     },
     "scripts": {
-        "start": "tsc"
+        "tsc": "tsc",
+        "start": "yarn tsc && node build/index.js",
+        "lint:ts": "./node_modules/.bin/eslint src --ext ts",
+        "lint": "yarn lint:ts"
     },
     "devDependencies": {
         "@types/node": "8.10.39",
         "eslint": "^5.12.0",
+        "eslint-config-prettier": "^3.3.0",
         "obj-file-parser": "0.5.0",
         "prettier": "^1.15.3",
         "tslint": "^5.12.0",
-        "typescript": "^3.2.2",
+        "typescript": "~3.1.1",
         "typescript-eslint-parser": "^21.0.2"
     }
 }

@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
       "target": "es6",
-      "rootDir": ".",
+      "rootDir": "./src",
       "outDir": "build",
-      "module": "esnext",
+      "module": "commonjs",
       "sourceMap": true,
       "moduleResolution": "node"
     },
